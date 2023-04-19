@@ -1,6 +1,6 @@
 <?php
 
-include 'authorizeEmployer.php';
+include 'authorizeAdmin.php';
 
 if(isset($_GET['id'])){
     include 'connect.php';
@@ -10,10 +10,10 @@ if(isset($_GET['id'])){
     
     if ($conn->query($sql) === TRUE) {
        
-           header('location: employerAccount.php');
+           header('location: adminAccount.php');
        
     }else{
-        echo "error deleting post";
+        echo "Error Deleting Post";
     }
 }
 

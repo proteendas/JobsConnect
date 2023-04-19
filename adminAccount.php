@@ -126,7 +126,6 @@
                             <th>Min Experience</th>
                             <th>Salary</th>
                             <th>Status</th>
-                            <th>Update</th>
                             <th>Delete</th>
                         </thead>
                         <tbody>
@@ -156,9 +155,6 @@
                                         <td><?php echo $minexp; ?></td>
                                         <td><?php echo $salary; ?></td>
                                         <td><?php echo $status; ?></td>
-                                        <td>
-                                            <a href="postjob.php?update=true&id=<?php echo $id; ?>"> <span class="glyphicon glyphicon-pencil"></span></a>
-                                        </td>
                                         <td>
                                             <a href="deletePost.php?id=<?php echo $id; ?>"> <span class="glyphicon glyphicon-trash"></span></a>
                                         </td>
