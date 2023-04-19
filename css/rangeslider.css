@@ -1,0 +1,96 @@
+.rangeslider,
+.rangeslider__fill {
+  display: block;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.rangeslider {
+  background-color: #D8D8D8;
+  box-shadow: 0 -2px 14px 0 rgba(195,195,195,0.5), 0 2px 14px 0 rgba(196,196,196,0.5);
+  position: relative;
+}
+
+.rangeslider--horizontal {
+  height: 15px;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rangeslider--vertical {
+  width: 20px;
+  min-height: 150px;
+  max-height: 100%;
+}
+
+.rangeslider--disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+
+.rangeslider__fill {
+  background-color: #22ad43;
+  position: absolute;
+}
+.rangeslider--horizontal .rangeslider__fill {
+  top: 0;
+  height: 100%;
+}
+.rangeslider--vertical .rangeslider__fill {
+  bottom: 0;
+  width: 100%;
+}
+
+.rangeslider__handle {
+  background: white;
+  cursor: pointer;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.rangeslider__handle:hover:after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin: auto;
+  position: absolute;
+  top: -1px;
+  right: 0;
+  bottom: 0;
+  left: -14px;
+  background-color: rgba(128, 189, 119, 0.34);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.rangeslider__handle:active, .rangeslider--active .rangeslider__handle {
+  background-size: 100%;
+  background-color: rgba(30, 136, 229, 1)
+}
+.rangeslider--horizontal .rangeslider__handle {
+  top: -5px;
+  touch-action: pan-y;
+  -ms-touch-action: pan-y;
+  background-color: #22ad43;
+}
+.rangeslider--vertical .rangeslider__handle {
+  left: -10px;
+  touch-action: pan-x;
+  -ms-touch-action: pan-x;
+}
+
+input[type="range"]:focus + .rangeslider .rangeslider__handle {
+  -moz-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+  -webkit-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+  box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+}

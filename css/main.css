@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+.textDarkShadow{
+    text-shadow: 0px 0px 3px #000,3px 3px 5px #003333; 
+}
+
+#main-title{
+	
+	
+	height: 100vh;
+	background-color:#414141;
+	
+}
+#main-title .content{
+	
+	position: absolute;
+	top: 50%;
+    left: 70%;
+	transform: translate(-50%,-50%);
+	font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+	color: white;
+	
+	
+}
+.myImg{
+	
+	margin-left: -15px;
+	margin-top: -150px;
+	position: absolute;
+	
+}
+@media screen and (max-width: 1100px) {
+
+    .myImg {display:none;}
+
+}
+
+.project{
+	
+	height: 60vh;
+	opacity: 0;
+	transition: all 1s ease-out;
+	
+}
+
+.project .fade-in{
+	opacity: 1;
+	
+}
