@@ -1,9 +1,7 @@
 # jobsConnect
 
 - Features
-
   - Entities
-  
     - Admin (has all rights for accepting and rejecting applications as well as delete job postings)
     - Employer (has rights to post a job and scrutinize applicants)
     - Jobseeker (has rights to view jobs and apply for them)
